@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+  - name: 📥 Descargar la última versión
+    url: https://github.com/HakaLab-2025/Hakabuddy30-Releases/releases/latest
+    about: Antes de reportar, asegúrate de usar la versión más reciente de HakaBuddy.
+  - name: 📬 Soporte directo
+    url: mailto:soporte@hakalab.com
+    about: Para consultas que no corresponden a un issue público.

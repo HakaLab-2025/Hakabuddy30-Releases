@@ -1,0 +1,58 @@
+name: Sugerir una característica o mejora
+description: Propón una nueva funcionalidad o una mejora para HakaBuddy
+title: "[Mejora]: "
+labels: ["enhancement"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        <p align="center">
+          <img src="https://raw.githubusercontent.com/HakaLab-2025/Hakabuddy30-Releases/main/.github/logo-hakabuddy.png" width="340" alt="HakaBuddy" />
+        </p>
+
+        ## Sugerencias para HakaBuddy
+
+        ¿Tienes una idea para mejorar HakaBuddy o una funcionalidad nueva que te gustaría ver?
+        Cuéntanos los detalles abajo. ¡Tus sugerencias nos ayudan a construir una mejor herramienta! 🚀
+  - type: textarea
+    id: problema
+    attributes:
+      label: ¿Qué problema o necesidad resuelve?
+      description: Describe la situación o limitación actual que motiva tu sugerencia.
+      placeholder: "Ej: Actualmente no puedo exportar los reportes a Excel y lo necesito para..."
+    validations:
+      required: true
+  - type: textarea
+    id: propuesta
+    attributes:
+      label: Describe la característica o mejora
+      description: ¿Qué te gustaría que HakaBuddy hiciera? Sé lo más concreto posible.
+      placeholder: Explica cómo imaginas que funcionaría.
+    validations:
+      required: true
+  - type: textarea
+    id: alternativas
+    attributes:
+      label: Alternativas consideradas
+      description: ¿Has pensado en otras formas de resolverlo? (opcional)
+      placeholder: Otras soluciones o workarounds que hayas probado.
+    validations:
+      required: false
+  - type: textarea
+    id: evidencias
+    attributes:
+      label: Referencias o evidencias
+      description: Capturas, bocetos o ejemplos de otras herramientas que ilustren tu idea. (opcional)
+      placeholder: Puedes pegar o arrastrar imágenes directamente en este campo.
+    validations:
+      required: false
+  - type: dropdown
+    id: prioridad
+    attributes:
+      label: ¿Qué tan importante es para ti?
+      options:
+        - Me gustaría tenerlo, pero no es urgente
+        - Mejoraría bastante mi trabajo diario
+        - Es clave / bloqueante para mi uso
+    validations:
+      required: false

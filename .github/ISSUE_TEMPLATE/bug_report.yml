@@ -1,0 +1,62 @@
+name: Reportar un problema
+description: Reporta un error o comportamiento inesperado de HakaBuddy
+title: "[Bug]: "
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        <p align="center">
+          <img src="https://raw.githubusercontent.com/HakaLab-2025/Hakabuddy30-Releases/main/.github/logo-hakabuddy.png" width="340" alt="HakaBuddy" />
+        </p>
+
+        ## Reporte de problemas de HakaBuddy
+
+        Esta sección es para reportar errores o comportamientos inesperados de la aplicación.
+        Completa los campos de abajo con el mayor detalle posible: así podemos reproducir el
+        problema y resolverlo más rápido. ¡Gracias por ayudarnos a mejorar HakaBuddy! 🙌
+  - type: input
+    id: version
+    attributes:
+      label: Versión afectada
+      description: ¿Qué versión de HakaBuddy estás usando? (la encuentras en "Sobre HakaBuddy")
+      placeholder: "Ej: 3.2.0.9"
+    validations:
+      required: true
+  - type: dropdown
+    id: so
+    attributes:
+      label: Sistema operativo
+      options:
+        - Windows
+        - macOS
+        - Linux
+    validations:
+      required: true
+  - type: textarea
+    id: descripcion
+    attributes:
+      label: Descripción del problema
+      description: ¿Qué pasó? ¿Qué esperabas que pasara?
+      placeholder: Describe el problema con el mayor detalle posible.
+    validations:
+      required: true
+  - type: textarea
+    id: evidencias
+    attributes:
+      label: Evidencias
+      description: Arrastra aquí capturas de pantalla, videos o logs que ayuden a entender el problema.
+      placeholder: Puedes pegar o arrastrar imágenes directamente en este campo.
+    validations:
+      required: false
+  - type: textarea
+    id: pasos
+    attributes:
+      label: Cómo replicarlo
+      description: Pasos para reproducir el problema.
+      placeholder: |
+        1. Ir a '...'
+        2. Hacer clic en '...'
+        3. Ver el error
+    validations:
+      required: true
